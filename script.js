@@ -34,14 +34,12 @@ let chooseOperator = (sign) =>{
         calculate();
     }
     operator = sign;
-    console.log(operator,"currNum has been switched to prevNum.");
     prevNum = currNum;
     currNum = "";
     result = "";
 }
 let factorial = (num) =>{
     let fact = 1;
-    console.log("This is the factorial portion.");
     for (let i = 1; i <=num ; i++){
         fact = fact * i ;
     }
@@ -49,9 +47,6 @@ let factorial = (num) =>{
 }
 
 let calculate = () =>{
-    console.log("The previous number is:", prevNum);
-    console.log("The current number is:", currNum);
-
     //Lets say a user enters 1 and then presses equals
     //This condition checks that there must be operator to run the calculate command
     if (operator !== ""){
@@ -103,7 +98,6 @@ let calculate = () =>{
         //Assigning result to currNum 
         //With this we can perform chaining calculation. 
         currNum = result;
-        console.log(currNum,"The result has been shifted to currNum.")
         prevNum = "";
         operator = "";
         displayNum();     
