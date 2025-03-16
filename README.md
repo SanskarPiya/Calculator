@@ -1,0 +1,1 @@
+A simple calculator that supports basic arithmetic operations as well as advanced features like factorial, permutation and combination. This calculator also supports day/night mode which changes the theme instantly, providing immediate feeback to the user.
